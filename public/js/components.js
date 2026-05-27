@@ -40,7 +40,7 @@ const FOOTER_HTML = `
           <div class="logo-icon" style="background:linear-gradient(135deg,#A07830,#C9A84C);">RP</div>
           <span class="footer-logo-text">Royal <span>Printers</span></span>
         </div>
-        <p>Delhi's trusted printing partner since 2014. Precision flex, vinyl, digital print and branding solutions — delivered with uncompromising quality.</p>
+        <p>Delhi's trusted printing partner since 2000, serving since 26 years. Precision flex, vinyl, digital print and branding solutions — delivered with uncompromising quality.</p>
         <a href="https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Royal%20Printers!%20I%20need%20a%20quote." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm" style="margin-top:20px;">💬 WhatsApp Us</a>
       </div>
       <div class="footer-col">
