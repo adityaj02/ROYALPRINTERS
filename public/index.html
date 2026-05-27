@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Printers Delhi – Digital & Flex Printing Experts</title>
+  <meta name="description" content="Royal Printers Delhi – 10+ years of expert digital print, flex, vinyl, business cards, and branding solutions. Get a free WhatsApp quote instantly."/>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <style>
+    /* ── Hero ── */
+    .hero { min-height: 92vh; display:flex; align-items:center; padding-top:70px; background: linear-gradient(145deg, #F9F6EF 0%, #EFE9D8 50%, #F5F0E4 100%); position:relative; overflow:hidden; }
+    .hero::before { content:''; position:absolute; top:-100px; right:-100px; width:600px; height:600px; background:radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 70%); pointer-events:none; }
+    .hero::after { content:''; position:absolute; bottom:-80px; left:-80px; width:400px; height:400px; background:radial-gradient(ellipse, rgba(160,120,48,0.07) 0%, transparent 70%); pointer-events:none; }
+    .hero-inner { display:grid; grid-template-columns:1.1fr 0.9fr; gap:80px; align-items:center; position:relative; z-index:1; }
+    .hero-eyebrow { display:inline-flex; align-items:center; gap:10px; background:rgba(160,120,48,0.1); border:1px solid rgba(160,120,48,0.2); border-radius:100px; padding:6px 16px; margin-bottom:24px; }
+    .hero-eyebrow span { font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-dark); }
+    .hero h1 { margin-bottom:22px; }
+    .hero h1 em { font-style:normal; display:block; color:var(--gold-dark); }
+    .hero-sub { font-size:1rem; max-width:520px; margin-bottom:36px; }
+    .hero-btns { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:48px; }
+    .hero-stats { display:flex; gap:40px; padding-top:36px; border-top:1px solid var(--border); }
+    .stat-val { font-size:2.2rem; font-weight:800; color:var(--gold-dark); line-height:1; }
+    .stat-label { font-size:0.72rem; color:var(--text-muted); margin-top:4px; text-transform:uppercase; letter-spacing:0.07em; }
+    .hero-badge-box { background:var(--white); border:1px solid var(--border-light); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow); position:relative; }
+    .hero-badge-box::before { content:''; position:absolute; inset:0; border-radius:var(--radius-lg); background:linear-gradient(135deg,rgba(201,168,76,0.05),transparent); pointer-events:none; }
+    .badge-title { font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:20px; }
+    .service-pill { display:flex; align-items:center; gap:12px; padding:12px 16px; background:var(--cream); border:1px solid var(--border-light); border-radius:var(--radius); margin-bottom:10px; transition:var(--transition); cursor:default; }
+    .service-pill:hover { border-color:var(--gold); background:rgba(201,168,76,0.05); }
+    .service-pill .pill-icon { font-size:1.4rem; flex-shrink:0; }
+    .service-pill .pill-name { font-size:0.875rem; font-weight:600; color:var(--text-primary); }
+    .service-pill .pill-sub { font-size:0.72rem; color:var(--text-muted); }
+    /* Capabilities */
+    .cap-section { background:var(--cream-2); border-top:1px solid var(--border-light); border-bottom:1px solid var(--border-light); }
+    .cap-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:52px; flex-wrap:wrap; gap:20px; }
+    .cap-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    /* Quote Form Section */
+    .quote-section { background:var(--white); }
+    .quote-inner { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .quote-card { background:var(--cream); border:1px solid var(--border); border-radius:var(--radius-lg); padding:36px; }
+    .why-point { display:flex; gap:14px; margin-bottom:22px; }
+    .why-icon { flex-shrink:0; width:44px; height:44px; border-radius:10px; background:rgba(160,120,48,0.1); display:flex; align-items:center; justify-content:center; font-size:1.2rem; }
+    .why-point h4 { font-size:0.95rem; font-weight:600; color:var(--text-primary); margin-bottom:3px; }
+    /* Responsive */
+    @media(max-width:900px){ .hero-inner,.quote-inner{ grid-template-columns:1fr; gap:40px; } .cap-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:600px){ .cap-grid{ grid-template-columns:1fr; } .hero-stats{ gap:24px; } }
+  </style>
+</head>
+<body>
+  <script src="/js/components.js"></script>
+  <main>
+    <!-- ── Hero ─────────────────────────────────────────────── -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-eyebrow"><span>Delhi's Trusted Print Studio · 10+ Years</span></div>
+          <h1>Precision Printing for<em>Delhi's Biggest Ideas.</em></h1>
+          <p class="hero-sub">From massive flex hoardings to razor-sharp business cards — we deliver flawless digital print, vinyl, and large-format solutions for brands that refuse to compromise.</p>
+          <div class="hero-btns">
+            <a href="/contact.html" class="btn btn-primary">💬 Get WhatsApp Quote</a>
+            <a href="/services.html" class="btn btn-outline">Explore Services →</a>
+          </div>
+          <div class="hero-stats">
+            <div><div class="stat-val">10+</div><div class="stat-label">Years Experience</div></div>
+            <div><div class="stat-val">2000+</div><div class="stat-label">Projects Done</div></div>
+            <div><div class="stat-val">500+</div><div class="stat-label">Happy Clients</div></div>
+          </div>
+        </div>
+        <div class="hero-badge-box">
+          <div class="badge-title">Our Core Services</div>
+          <div class="service-pill"><span class="pill-icon">🖨️</span><div><div class="pill-name">Digital Print</div><div class="pill-sub">13" × 51" · Stickers · Jagran Cards</div></div></div>
+          <div class="service-pill"><span class="pill-icon">✂️</span><div><div class="pill-name">Roland Eco Solvent Print & Cut</div><div class="pill-sub">Star Flex · Precision cut vinyl</div></div></div>
+          <div class="service-pill"><span class="pill-icon">🎨</span><div><div class="pill-name">Solvent / Flex Printing</div><div class="pill-sub">Frontlit · Backlit · Hoardings</div></div></div>
+          <div class="service-pill"><span class="pill-icon">💼</span><div><div class="pill-name">Business Cards & Letter Head</div><div class="pill-sub">Tags · Visiting Cards · Invoice Books</div></div></div>
+          <div class="service-pill"><span class="pill-icon">📒</span><div><div class="pill-name">Diary & Branding</div><div class="pill-sub">Catalogues · Pamphlets · Brochures</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Capabilities ─────────────────────────────────────── -->
+    <section class="section cap-section">
+      <div class="container">
+        <div class="cap-header reveal">
+          <div>
+            <div class="section-label">What We Do</div>
+            <h2>Core Capabilities</h2>
+          </div>
+          <a href="/services.html" class="btn btn-gold-outline btn-sm">Full Service List →</a>
+        </div>
+        <div class="cap-grid">
+          <article class="card reveal">
+            <img src="/ROYAL DIGITAL.png" alt="Digital Print" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-bottom:1px solid var(--border-light); display:block;" />
+            <div class="card-body">
+              <div class="card-tags"><span class="tag">13"×51"</span><span class="tag">Digital</span></div>
+              <h3 class="card-title">Digital Print</h3>
+              <p class="card-desc" style="font-size:0.83rem;">High-resolution digital prints — stickers, jagran cards, visiting cards, wedding cards.</p>
+              <a href="/services.html#digital" style="color:var(--gold-dark);font-size:0.8rem;font-weight:600;display:inline-block;margin-top:10px;">Learn more →</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="/ROYAL STAR ECO.png" alt="Star Flex Print & Cut" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-bottom:1px solid var(--border-light); display:block;" />
+            <div class="card-body">
+              <div class="card-tags"><span class="tag">Roland</span><span class="tag">Eco Solvent</span></div>
+              <h3 class="card-title">Star Flex Print & Cut</h3>
+              <p class="card-desc" style="font-size:0.83rem;">Roland eco solvent precision print & cut — vehicle wraps, decals, precision stickers.</p>
+              <a href="/services.html#star" style="color:var(--gold-dark);font-size:0.8rem;font-weight:600;display:inline-block;margin-top:10px;">Learn more →</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="/ROYAL FLEX SOLVENT.png" alt="Flex / Solvent Printing" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-bottom:1px solid var(--border-light); display:block;" />
+            <div class="card-body">
+              <div class="card-tags"><span class="tag">Frontlit</span><span class="tag">Backlit</span></div>
+              <h3 class="card-title">Flex / Solvent Printing</h3>
+              <p class="card-desc" style="font-size:0.83rem;">Industrial-scale hoarding, banner and backlit flex for outdoor advertising.</p>
+              <a href="/services.html#flex" style="color:var(--gold-dark);font-size:0.8rem;font-weight:600;display:inline-block;margin-top:10px;">Learn more →</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="/ROYAL BUSINESS CARDS.png" alt="Cards & Stationery" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-bottom:1px solid var(--border-light); display:block;" />
+            <div class="card-body">
+              <div class="card-tags"><span class="tag">Business Cards</span><span class="tag">Letter Head</span></div>
+              <h3 class="card-title">Cards & Stationery</h3>
+              <p class="card-desc" style="font-size:0.83rem;">Premium business cards, letter heads, tags, invoice books and digital visiting cards.</p>
+              <a href="/services.html#cards" style="color:var(--gold-dark);font-size:0.8rem;font-weight:600;display:inline-block;margin-top:10px;">Learn more →</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="/ROYAL DIARY.png" alt="Diary & Branding Print" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-bottom:1px solid var(--border-light); display:block;" />
+            <div class="card-body">
+              <div class="card-tags"><span class="tag">Diary</span><span class="tag">Branding</span></div>
+              <h3 class="card-title">Diary & Branding Print</h3>
+              <p class="card-desc" style="font-size:0.83rem;">Custom branded diaries, catalogues, pamphlets, brochures and leaflets for your business.</p>
+              <a href="/services.html#diary" style="color:var(--gold-dark);font-size:0.8rem;font-weight:600;display:inline-block;margin-top:10px;">Learn more →</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="/ROYAL VINYL.png" alt="Premium Vinyl Graphics" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-bottom:1px solid var(--border-light); display:block;" />
+            <div class="card-body">
+              <div class="card-tags"><span class="tag">Cast Vinyl</span><span class="tag">Frosting</span></div>
+              <h3 class="card-title">Premium Vinyl Graphics</h3>
+              <p class="card-desc" style="font-size:0.83rem;">Window graphics, glass frosting, vehicle decals and precision adhesive vinyl.</p>
+              <a href="/services.html#vinyl" style="color:var(--gold-dark);font-size:0.8rem;font-weight:600;display:inline-block;margin-top:10px;">Learn more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ── Quick Quote + Why Us ──────────────────────────────── -->
+    <section class="section quote-section">
+      <div class="container quote-inner">
+        <div class="reveal">
+          <div class="section-label">Why Royal Printers</div>
+          <h2>Uncompromising Quality,<br><span class="gold-gradient">Industrial Scale.</span></h2>
+          <div class="gold-line"></div>
+          <div class="why-point"><div class="why-icon">⚙️</div><div><h4>State-of-the-Art Equipment</h4><p>Roland Eco Solvent printers delivering razor-sharp output across all media.</p></div></div>
+          <div class="why-point"><div class="why-icon">🎨</div><div><h4>Accurate Colour Every Time</h4><p>Factory-calibrated ICC profiles for perfect colour fidelity across every job.</p></div></div>
+          <div class="why-point"><div class="why-icon">🚚</div><div><h4>Pan-Delhi Delivery</h4><p>Fast turnaround and delivery across all NCR districts with quality guarantee.</p></div></div>
+          <div class="why-point"><div class="why-icon">💬</div><div><h4>Instant WhatsApp Quotes</h4><p>Share your requirement and get a quote directly on WhatsApp within the hour.</p></div></div>
+        </div>
+        <div class="quote-card reveal">
+          <div class="section-label">Quick Request</div>
+          <h3 style="margin-bottom:6px;">Get a <span class="gold">Free Quote</span></h3>
+          <p style="font-size:0.85rem;margin-bottom:24px;">Fill in your details — we'll open WhatsApp with a ready message for you!</p>
+          <form id="quickQuoteForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="q-name">Full Name</label>
+              <input class="form-input" id="q-name" name="name" type="text" placeholder="Your full name" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="q-phone">Phone Number</label>
+              <input class="form-input" id="q-phone" name="phone" type="tel" placeholder="+91 92124 05987" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="q-service">Service Required</label>
+              <select class="form-select" id="q-service" name="service">
+                <option value="">-- Select a service --</option>
+                <option>Digital Print (13"×51")</option>
+                <option>Roland Eco Solvent Print & Cut</option>
+                <option>Solvent / Flex Printing</option>
+                <option>Business Cards & Stationery</option>
+                <option>Diary & Branding Print</option>
+                <option>Premium Vinyl Graphics</option>
+                <option>Other / Custom</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="q-req">Requirement Details</label>
+              <textarea class="form-textarea" id="q-req" name="brief" rows="3" placeholder="Size, quantity, deadline…" required style="min-height:80px;"></textarea>
+            </div>
+            <button class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;" type="submit" id="quickSubmitBtn">💬 Get Quote on WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>

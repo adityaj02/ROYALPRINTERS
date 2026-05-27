@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & Quote – Royal Printers Delhi</title>
+  <meta name="description" content="Submit a print requisition or contact Royal Printers Delhi. WhatsApp quote with your message pre-filled — instant response."/>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <style>
+    .contact-grid { display:grid; grid-template-columns:1.15fr 1fr; gap:60px; align-items:start; }
+    @media(max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
+    .req-form-card { background:var(--white); border:1px solid var(--border-light); border-radius:var(--radius-lg); padding:40px; box-shadow:var(--shadow-sm); }
+    .req-form-card h2 { font-size:1.5rem; margin-bottom:6px; }
+    .req-form-card > p { font-size:0.875rem; margin-bottom:28px; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    @media(max-width:500px){ .two-col{ grid-template-columns:1fr; } }
+    .info-card { background:var(--white); border:1px solid var(--border-light); border-radius:var(--radius-lg); padding:28px; margin-bottom:20px; box-shadow:var(--shadow-sm); }
+    .info-card h3 { font-size:0.95rem; font-weight:700; margin-bottom:16px; color:var(--text-primary); }
+    .info-row { display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; }
+    .info-icon { font-size:1.15rem; flex-shrink:0; margin-top:1px; }
+    .info-label { font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); font-weight:700; margin-bottom:2px; }
+    .info-val { font-size:0.875rem; color:var(--text-primary); font-weight:500; }
+    .info-val a { color:var(--gold-dark); }
+    .info-val a:hover { text-decoration:underline; }
+    .guarantee-list { list-style:none; }
+    .guarantee-list li { display:flex; align-items:center; gap:10px; margin-bottom:11px; font-size:0.875rem; color:var(--text-secondary); }
+    .guarantee-list li::before { content:'✓'; color:var(--gold-dark); font-weight:800; font-size:0.9rem; }
+    #successBanner { display:none; background:rgba(37,211,102,0.08); border:1.5px solid rgba(37,211,102,0.3); border-radius:var(--radius); padding:18px 20px; margin-bottom:20px; }
+    #successBanner strong { color:#1DA851; }
+    .address-box { background:var(--cream-2); border:1px solid var(--border); border-radius:var(--radius); padding:20px 24px; }
+    .address-box .addr-line { font-size:0.875rem; color:var(--text-primary); line-height:1.8; }
+    .wa-banner { background:linear-gradient(135deg,#25D366,#1DA851); border-radius:var(--radius-lg); padding:24px 28px; display:flex; align-items:center; gap:20px; margin-bottom:20px; }
+    .wa-banner-icon { font-size:2.5rem; flex-shrink:0; }
+    .wa-banner h4 { color:#fff; font-size:1rem; font-weight:700; margin-bottom:4px; }
+    .wa-banner p { color:rgba(255,255,255,0.85); font-size:0.82rem; }
+  </style>
+</head>
+<body>
+  <script src="/js/components.js"></script>
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <div class="section-label" style="justify-content:center;">Get Started</div>
+        <h1>Get Your <span class="gold-gradient">Print Quote.</span></h1>
+        <div class="gold-line" style="margin:18px auto;"></div>
+        <p style="max-width:520px;margin:0 auto;">Fill in your details and we'll open WhatsApp with a ready-made requisition message — get a response within the hour.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- Requisition Form -->
+        <div class="req-form-card reveal">
+          <div class="section-label">Print Requisition Form</div>
+          <h2>Project <span class="gold">Details</span></h2>
+          <p>Complete the form below. On submit, WhatsApp will open with your full requisition pre-filled — just hit send!</p>
+
+          <div id="successBanner"><strong>✅ WhatsApp Opened!</strong> Your requisition message has been pre-filled. Just press send in WhatsApp.</div>
+
+          <form id="requisitionForm" novalidate>
+            <div class="two-col">
+              <div class="form-group">
+                <label class="form-label" for="r-name">Contact Name *</label>
+                <input class="form-input" id="r-name" name="name" type="text" placeholder="Full name" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="r-phone">Phone Number *</label>
+                <input class="form-input" id="r-phone" name="phone" type="tel" placeholder="+91 XXXXX XXXXX" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="r-org">Organisation / Brand</label>
+              <input class="form-input" id="r-org" name="organization" type="text" placeholder="Company or brand name"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="r-service">Service Required *</label>
+              <select class="form-select" id="r-service" name="service" required>
+                <option value="">-- Select a service --</option>
+                <option>Digital Print (13"×51")</option>
+                <option>Roland Eco Solvent Print & Cut</option>
+                <option>Solvent / Flex Printing</option>
+                <option>Business Cards & Stationery</option>
+                <option>Diary & Branding Print</option>
+                <option>Premium Vinyl Graphics</option>
+                <option>Pamphlet / Brochure / Catalogue</option>
+                <option>Posters & Invoice Book</option>
+                <option>Other / Custom</option>
+              </select>
+            </div>
+            <div class="two-col">
+              <div class="form-group">
+                <label class="form-label" for="r-dims">Dimensions (W × H)</label>
+                <input class="form-input" id="r-dims" name="dimensions" type="text" placeholder="e.g. 20ft × 10ft"/>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="r-qty">Quantity</label>
+                <input class="form-input" id="r-qty" name="quantity" type="text" placeholder="e.g. 500 pcs"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="r-brief">Project Brief / Requirements *</label>
+              <textarea class="form-textarea" id="r-brief" name="brief" rows="4" placeholder="Describe your project: materials, finish, deadline, special requirements…" required></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-check">
+                <input type="checkbox" name="installation" id="r-install"/>
+                <span>Installation / delivery services required</span>
+              </label>
+            </div>
+            <button class="btn btn-whatsapp" style="width:100%;justify-content:center;padding:15px;font-size:0.95rem;" type="submit">💬 Submit & Open WhatsApp</button>
+            <p style="font-size:0.75rem;text-align:center;margin-top:10px;color:var(--text-muted);">WhatsApp will open with your requisition pre-filled and ready to send.</p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="reveal">
+          <!-- WhatsApp Banner -->
+          <div class="wa-banner">
+            <div class="wa-banner-icon">💬</div>
+            <div>
+              <h4>Instant WhatsApp Quotes</h4>
+              <p>Message us directly — we respond within the hour on business days.</p>
+              <a href="https://wa.me/919212405987?text=Hi%20Royal%20Printers!%20I%20need%20a%20quote." target="_blank" rel="noopener" style="color:#fff;font-weight:700;font-size:0.9rem;text-decoration:underline;display:inline-block;margin-top:8px;">+91 92124 05987 →</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>📞 Contact Details</h3>
+            <div class="info-row">
+              <div class="info-icon">📱</div>
+              <div>
+                <div class="info-label">Primary</div>
+                <div class="info-val"><a href="tel:+919212405987">+91 92124 05987</a></div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">📱</div>
+              <div>
+                <div class="info-label">Secondary</div>
+                <div class="info-val"><a href="tel:+919310175191">+91 93101 75191</a></div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">✉️</div>
+              <div>
+                <div class="info-label">Email</div>
+                <div class="info-val"><a href="mailto:royalflexwale@gmail.com">royalflexwale@gmail.com</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>📍 Our Address</h3>
+            <div class="address-box">
+              <div class="addr-line">
+                <strong>Royal Printers</strong><br/>
+                246, Gali No. 1,<br/>
+                Near Rohini Sec-2 Govt. Sr. Sec. School,<br/>
+                Mangol Pur Kalan,<br/>
+                Delhi – 110086
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=246+Gali+No+1+Mangol+Pur+Kalan+Delhi+110086" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="margin-top:16px;">🗺️ Open in Google Maps</a>
+          </div>
+
+          <div class="info-card">
+            <h3>🏆 Our Guarantees</h3>
+            <ul class="guarantee-list">
+              <li>10+ years of printing expertise</li>
+              <li>Roland Eco Solvent precision equipment</li>
+              <li>Quote response within 1 hour</li>
+              <li>Pan-Delhi delivery & installation</li>
+              <li>Quality satisfaction guarantee</li>
+              <li>Competitive pricing, no hidden charges</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>
